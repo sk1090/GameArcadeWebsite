@@ -81,5 +81,6 @@ p:after {
 
 footer
 {
-  margin-top:auto;
+  position:relative;
+  bottom: 0;
 }
