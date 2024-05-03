@@ -76,11 +76,13 @@ body {
   border-color: blue;
 }
 
+/*card animation*/
 .card:active {
   transform: scale(0.95);
   transition: transform 0.2s ease-in-out;
 }
 
+/*card flip animation*/
 .card.flip {
   transform: rotateY(180deg);
   cursor: pointer;
@@ -99,6 +101,8 @@ img
 .back{
   background-color: black;
 }
+
+
 .win {
   text-align: center;
   vertical-align: middle;
