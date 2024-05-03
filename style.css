@@ -1,5 +1,6 @@
-footer{
-  position:relative;
+#thispage footer{
+  position:fixed;
+  bottom:0;
 }
 .gameicon{
   width: 200px;
