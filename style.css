@@ -118,7 +118,15 @@ header{
 body{
   height: 100vh;
 }
-
+/*
+a:focus .gameicon
+{
+    border:1px solid black;
+}
+*/
+div:focus{
+  border:1px solid black;
+}
 /*
 main{
   display: flex;
