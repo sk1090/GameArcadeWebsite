@@ -9,7 +9,6 @@ let currentfocus = 0;
 
 
   function pressArrow(event) {
-  //  alert("hi");
 
     //move current focus to the next element for right arrow, up arrows and tabs,
     if ((event.keyCode == 9 || event.code === "ArrowRight"||event.code === "ArrowUp")) {
@@ -25,11 +24,12 @@ let currentfocus = 0;
           }
           currentfocus = (currentfocus)%3;
     }
-      //doesn't actually move the focus for tabs because that's already implemented
+      //doesn't actually move the focus for tab's because that's already implemented
     if(event.keyCode == 9)
     {
       return;
     }
+    
     if(currentfocus<0)
     {
       currentfocus = currentfocus+3;
