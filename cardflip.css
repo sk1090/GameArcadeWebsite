@@ -22,7 +22,7 @@ body {
 @media screen and (max-height: 550px) and (min-height: 100px){
   /*card size and game container size reduced for smaller heights*/
   .gameContainer {
-   width:70%;
+   height:70%;
     aspect-ratio : 1 / 1;
     margin: auto;
     display: flex;
@@ -45,7 +45,7 @@ body {
 
 @media screen and (min-height: 550px){
   .gameContainer {
-   height:70%;
+   width:70%;
     aspect-ratio : 1 / 1;
     margin: auto;
     display: flex;
