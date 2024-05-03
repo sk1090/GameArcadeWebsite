@@ -12,6 +12,10 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+.thumbnailscontainer{
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
 }
 
 /*for smaller screen sets the width and height of the game-icons to be a percentage of the total available*/
@@ -22,6 +26,10 @@
   background-color: ghostwhite;
   margin-left: 5px;
   margin-right: 5px;
+}
+.thumbnailscontainer{
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 }
 
@@ -41,8 +49,6 @@
 
 .thumbnailscontainer
 {
-  padding-top: 4%;
-  padding-bottom: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
