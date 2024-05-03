@@ -18,15 +18,11 @@ body {
 }
 
 
-
+/*dimensions of game container adaptive to screen size*/
 @media screen and (max-height: 550px) and (min-height: 100px){
   .gameContainer {
-   width:70%;
+    width:70%;
     aspect-ratio : 1 / 1;
-
-
-
-
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -44,21 +40,17 @@ body {
   }
   }
 
-  @media screen and (min-height: 550px){
-.gameContainer {
- height:70%;
+@media screen and (min-height: 550px){
+  .gameContainer {
+  height:70%;
   aspect-ratio : 1 / 1;
-
-
-
-
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   perspective: 1000px;
 }
 
-.front,
+ .front,
 .back {
   /*background-color: #807f7f;*/
   width: 100%;
