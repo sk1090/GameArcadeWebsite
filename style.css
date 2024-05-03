@@ -2,26 +2,31 @@
   position:fixed;
   bottom:0;
 }
+
+/*for desktop view sets the game icons to be 200 by 300 px)*/
+@media screen and (min-width: 600px){
 .gameicon{
   width: 200px;
   height: 300px;
-
-
-  /*
-max-width:23%;
-max-height:23%;
-*/
   background-color: ghostwhite;
-/*  margin-right: 80px;*/
-
   margin-left: 10px;
   margin-right: 10px;
+}
+}
 
+/*for smaller screen sets the width and height of the game-icons to be a percentage of the total available*/
+@media screen and (max-width: 600px){
+.gameicon{
+  max-width: 90%;
+  max-height: 99%;
+  background-color: ghostwhite;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 }
 
 .thumbnail2 img{
   max-width: 60%;
-  /*max-height: 180px;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,43 +39,33 @@ max-height:23%;
   align-items: center;
 }
 
-
-
-body{
-      height: 100vh;
+.thumbnailscontainer
+{
+  padding-top: 4%;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
+/*sets the body to take 100% of the height of the viewport*/
+body{
+  height: 100vh;
+}
 
-
+/*sets some footer specs for all pages*/
 footer{
-  /*
-  position: absolute;
-    bottom: 0;
-    left: 0;
-    */
-    /*
-    width:100%;
-    text-align: center;
-    padding-top:  20px;
-    padding-bottom:  20px;
-     margin-top: auto;
-     margin-bottom: 0;
-*/
-width:100%;
-text-align: center;
-padding-top:  20px;
-padding-bottom:  20px;
-
-
-/*
-    position:fixed;
-    bottom:0;
-*/
+  width:100%;
+  text-align: center;
+  padding-top:  20px;
+  padding-bottom:  20px;
 }
 p{
   text-align: center;
 }
 
+/*link pseudoclass for all pages*/
 a:link {
   color: purple;
 }
@@ -85,11 +80,6 @@ a:hover   {
 header, footer{
   color: ghostwhite;
   background-color: black;
-  /*
-  text-align: center;
-  padding-top:  20px;
-  padding-bottom:  20px;
-  */
 }
 
 header{
@@ -98,115 +88,7 @@ header{
   padding-bottom:  15px;
 }
 
-.thumbnailscontainer
-{
-  padding-top: 4%;
-  padding-bottom: 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.thumbnailscontainer2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 4%;
-}
-
-body{
-  height: 100vh;
-}
-/*
-a:focus .gameicon
-{
-    border:1px solid black;
-}
-*/
+/*sets a div to be outlined in black if focused on*/
 div:focus{
   border:1px solid black;
 }
-/*
-main{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-/*p {
-  font-family: sans-serif;
-}
-
-body{
-  background-color: lightblue;
-}
-
-header, footer{
-  color: ghostwhite;
-  background-color: #AED581;
-  text-align: center;
-  padding-top:  20px;
-  padding-bottom:  20px;
-}
-
-button{
-  text-align: center;
-}
-
-a:link {
-  color: purple;
-}
-a:visited{
-  color: blue;
-}
-a:hover   {
-  color: purple;
-  cursor: pointer;
-}
-
-
-@media screen and (max-width: 600px) and (min-width: 300px){
-  figure, p,  h4, section, .container {
-    text-align: center;
-    display: block;
-  }
-  img{
-    width:  300px;
-    height:  auto;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  figure, p,  h4, section, .container {
-    text-align: center;
-    display: block;
-  }
-
-  img{
-    width:  100%;
-    height:  auto;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  img{
-    width: 200px;
-    height:  auto;
-  }
-  .container{
-      display: flex;
-    }
-}
-
-#music_image{
-  border-radius: 8px;
-}
-
-#baking_image{
-  box-shadow: 0 5px 10px 0 lightslategray, 0 5px 10px 0 lightslategray;
-}
-*/
