@@ -1,4 +1,6 @@
-
+footer{
+  position:relative;
+}
 .gameicon{
   width: 200px;
   height: 300px;
