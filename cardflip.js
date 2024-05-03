@@ -1,6 +1,8 @@
-/* Adapted from Open Source Code,  Sharma, Nawin and Thapa, Parth, Flipping Card Memory Game, 2024,
-https://github.com/NawinKumarSharma/FlippingCards/tree/main . Licensed under the MIT License,
- https://github.com/NawinKumarSharma/FlippingCards/blob/main/LICENSE. --*/
+/* Code Adapted from Open Source Code, Citation:
+     Sharma, Nawin and Thapa, Parth, Flipping Card Memory Game, 2024,
+     https://github.com/NawinKumarSharma/FlippingCards/tree/main . Licensed under the MIT License,
+      https://github.com/NawinKumarSharma/FlippingCards/blob/main/LICENSE. 
+ */
 
 const cards = document.querySelectorAll(".card"); //gets the cards by finding elements of the card class
 
