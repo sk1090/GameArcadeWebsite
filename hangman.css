@@ -1,0 +1,85 @@
+#hanged-man{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*on mobile devices with a smaller width resizes the sections so the right section gets memorize
+  space so the keyboard can fit into the frame*/
+@media screen and (max-width: 600px) and (min-width: 100px){
+  .l{
+    flex-basis: 40%;
+  }
+  .r {
+      flex-basis: 60%;
+  }
+}
+
+/*on desktop devices has a 50-50 split between the left and right parts of the page*/
+@media screen and (min-width: 600px) {
+  .l,.r{
+    flex:1;
+  }
+}
+
+/*initially has text containing author name solution hidden*/
+p {
+  font-family: sans-serif;
+  position:relative;
+  display: inline-block;
+  color: transparent;
+  font-size:30px;
+}
+
+h2{
+  text-align:center;
+}
+#letter-button button{
+  /*background-color:darkgreen*/
+}
+
+#dashes{
+      text-align: center;
+}
+
+#letter-button div{
+  text-align: center;
+}
+
+#win-message p{
+  color: black;
+}
+
+
+.container {
+    display: flex;
+}
+
+
+img{
+  width: 99%;
+}
+
+#replay-button
+{
+  display: flex;
+  justify-content: center;
+}
+
+/*pseudoclass so text in paragraph elements will have small dashes under it*/
+p:after {
+  content: '';
+  width: 18px;
+  background-color: black;
+  height: 4px;
+  margin: 2px auto auto;
+  text-align: center;
+  display: block;
+  position:relative;
+}
+
+
+footer
+{
+  margin-top:auto;
+}
