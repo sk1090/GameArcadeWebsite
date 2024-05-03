@@ -199,6 +199,7 @@ let count=0;
   function restartGame(event) {
     letters_right = 0;
     num_letters = 0;
+    guesses = 6;
     splitAuthors = [];
     //resets the text and images
     document.getElementById("win-message").innerHTML = "";
@@ -207,6 +208,7 @@ let count=0;
     let letters = document.querySelectorAll("#letter-button button");
     //resets the butttons
     for(let i = 0; i < letters.length; i++) {
+      letters[i].addEventListener("click", clickedLetters);
       letters[i].style.color = 'black';
       letters[i].classList.remove("clicked");
     }
